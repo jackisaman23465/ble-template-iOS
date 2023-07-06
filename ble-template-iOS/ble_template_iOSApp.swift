@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct ble_template_iOSApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(CBManager())
         }
     }
 }
